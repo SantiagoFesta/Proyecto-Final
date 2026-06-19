@@ -54,7 +54,7 @@ def agregar_columna_decada(df: pd.DataFrame, columna_año: str = "Year") -> pd.D
 
 
 def resumir_por_grupo(df: pd.DataFrame, columnas_grupo: list, columna_valor: str,
-                       funciones_resumen, kwargs) -> pd.DataFrame:
+                       funciones_resumen, **kwargs) -> pd.DataFrame:
     """
     Agrupamos las columnas indicadas para sacar conclusiones sobre ellas.
     """
